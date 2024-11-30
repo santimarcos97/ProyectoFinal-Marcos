@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: New Amsterdam;
+    src: url(/assets/fonts/NewAmsterdam-Regular.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #da1717, #47474e);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-family: New Amsterdam;
+    font-size: x-large;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.card {
+    background: linear-gradient(to right, #870505dc, #ff3030);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.959);
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.titulo-h1 {
+    color: black;
+    font-weight: bolder;
+}
+
+#intro-card input,
+#intro-card button,
+#quiz-card input,
+#quiz-card button {
+    margin-top: 10px;
+}
+
+#question-container {
+    margin-bottom: 10px; 
+}
+
+#feedback {
+    margin-top: 10px; 
+}
+
+
+.parrafo-1 {
+    color: black;
+    font-size: large;
+}
+
+#username-input,
+#answer-input {
+    padding: 2%;
+}
+
+h1, h2 {
+    color: #101010;
+}
+
+button {
+    background-color: #ff6606;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #dfc410;
+}
+
+#quiz-card{
+    display: flex;
+}
+
+.swal2-popup {
+    position: fixed;
+    z-index: 1000;
+}
+
+.my-popup {
+    background: linear-gradient(to right, #870505dc, #ff3030);
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    color: black;
+}
+
+.my-title {
+    color: black;
+    font-weight: bold;
+}
+
+.my-text {
+    color: black;
+}
+
+.my-button {
+    background-color: #ff6606;
+    color: black;
+    font-weight: bold;
+}
+
+.my-button:hover {
+    background-color: #dfc410;
+}

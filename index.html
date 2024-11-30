@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizVenture</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="height: 100vh!important;">
+
+    <div id="intro-card" class="card">
+        <h1 class="titulo-h1">FormulaQuiz</h1>
+        <p class="parrafo-1">¿Estás listo para poner a prueba tus conocimientos sobre la Formula 1?</p>
+        <input type="text" id="username-input" placeholder="Ingresa tu nombre">
+        <button id="start-button">Comenzar Juego</button>
+    </div>
+
+    <div id="score-card" class="card" style="display: none;">
+        <h2>Puntajes</h2>
+        <ul>
+            <li>50 puntos: "¡Un talento excepcional!"</li>
+            <li>30 - 40 puntos: "Vas por el camino correcto."</li>
+            <li>20 - 30 puntos: "Un poco más de esfuerzo y lo lograrás."</li>
+            <li>10 - 20 puntos: "Aún queda mucho por aprender."</li>
+        </ul>
+        <button id="begin-quiz">Empezar a Responder</button>
+    </div>
+
+    <div id="quiz-card" class="card" style="display: none;">
+        <div id="question-container"></div>
+        <input type="text" id="answer-input" placeholder="Tu respuesta">
+        <button id="submit-answer">Enviar Respuesta</button>
+        <p id="feedback"></p>
+    </div>
+
+    <div id="final-score-card" class="card" style="display: none;">
+        <p>Puntuación: <span id="score">0</span></p>
+        <ul id="final-score-list"></ul>
+        <button id="clear-scores-button">Eliminar Puntajes</button>
+        <button id="restart-button">Reiniciar Quiz</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+</html>
